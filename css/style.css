@@ -316,8 +316,46 @@ main .container {
   main .container .header {
     text-align: center;
     margin-bottom: 2rem; }
+    main .container .header h1 {
+      font-family: 'Montserrat', sans-serif;
+      color: #171669;
+      font-size: 4em; }
   main .container .content {
     width: 100%;
     max-width: 400px;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center; }
+    main .container .content label {
+      color: #171669;
+      font-size: 1em; }
+    main .container .content button {
+      display: inline-block;
+      border-radius: 6px;
+      background-color: #171669;
+      border: white .1px outset;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 17px;
+      padding: 6px;
+      width: 130px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: auto; }
+      main .container .content button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s; }
+        main .container .content button span:after {
+          content: '»';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -15px;
+          transition: 0.5s; }
+      main .container .content button:hover span {
+        padding-right: 15px; }
+        main .container .content button:hover span:after {
+          opacity: 1;
+          right: 0; }
