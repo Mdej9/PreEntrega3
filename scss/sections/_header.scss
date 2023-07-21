@@ -1,5 +1,10 @@
 header{
     nav{
+        div{
+            .nav-titulo{
+                font-family: 'Lugrasimo', cursive;
+            }
+        }
         .container-fluid{
             .navbar-collapse{
                 justify-content: flex-end;

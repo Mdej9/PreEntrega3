@@ -2,7 +2,18 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: monospace; }
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 15px; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+header nav div .nav-titulo {
+  font-family: 'Lugrasimo', cursive; }
 
 header nav .container-fluid .navbar-collapse {
   justify-content: flex-end; }
@@ -71,7 +82,7 @@ main .section_banner-bottom {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #b8b8b8;
+  background-color: #e0e0e0;
   padding: 15px;
   margin-bottom: 15px; }
   main .section_banner-bottom p {
@@ -107,6 +118,23 @@ main .section_banner-bottom {
         opacity: 1;
         right: 0; }
 
+main hr {
+  height: 1px;
+  opacity: .5;
+  max-width: 896px;
+  margin: 0 auto -2px;
+  padding: 15px; }
+
+main .encabezado-cards strong {
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif; }
+
+main .encabezado-cards h3 {
+  color: #171669;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif; }
+
 main .section_cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -115,6 +143,128 @@ main .section_cards {
   padding: 25px; }
   main .section_cards .btn-primary {
     background-color: #171669 !important; }
+  main .section_cards div h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #171669;
+    font-size: 1em; }
+
+main .section_banner-bottom2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #171669;
+  padding: 15px; }
+  main .section_banner-bottom2 p {
+    color: white; }
+  main .section_banner-bottom2 .button_banner-bottom {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #171669;
+    border: white .1px outset;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 6px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto; }
+    main .section_banner-bottom2 .button_banner-bottom span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s; }
+      main .section_banner-bottom2 .button_banner-bottom span:after {
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -15px;
+        transition: 0.5s; }
+    main .section_banner-bottom2 .button_banner-bottom:hover span {
+      padding-right: 15px; }
+      main .section_banner-bottom2 .button_banner-bottom:hover span:after {
+        opacity: 1;
+        right: 0; }
+
+main .section_banner-bottom3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 15px; }
+  main .section_banner-bottom3 p {
+    margin-top: auto; }
+  main .section_banner-bottom3 .button_banner-bottom {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #171669;
+    border: white .1px outset;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 6px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto; }
+    main .section_banner-bottom3 .button_banner-bottom span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s; }
+      main .section_banner-bottom3 .button_banner-bottom span:after {
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -15px;
+        transition: 0.5s; }
+    main .section_banner-bottom3 .button_banner-bottom:hover span {
+      padding-right: 15px; }
+      main .section_banner-bottom3 .button_banner-bottom:hover span:after {
+        opacity: 1;
+        right: 0; }
+
+main .section_app {
+  margin: 25px; }
+  main .section_app .div_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .section_app .div_app .div_img-app img {
+      width: 100%; }
+  main .section_app .div_buttons-app button {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #171669;
+    border: white .1px outset;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 6px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto; }
+    main .section_app .div_buttons-app button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s; }
+      main .section_app .div_buttons-app button span:after {
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -15px;
+        transition: 0.5s; }
+    main .section_app .div_buttons-app button:hover span {
+      padding-right: 15px; }
+      main .section_app .div_buttons-app button:hover span:after {
+        opacity: 1;
+        right: 0; }
 
 @media (min-width: 767px) {
   main .section_banner-top {
@@ -126,3 +276,30 @@ main .section_cards {
     justify-content: space-around; }
     main .section_banner-bottom .button_banner {
       margin: 5px; } }
+
+footer .bottom-footer {
+  background-color: #171669; }
+  footer .bottom-footer .b-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer .bottom-footer .b-footer h3 {
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 2em; }
+    footer .bottom-footer .b-footer .ul-footer {
+      display: flex; }
+      footer .bottom-footer .b-footer .ul-footer li {
+        list-style: none;
+        margin: 25px; }
+  footer .bottom-footer .ul-b-footer {
+    display: flex;
+    justify-content: space-around; }
+    footer .bottom-footer .ul-b-footer a {
+      text-decoration: none;
+      color: white; }
+    footer .bottom-footer .ul-b-footer li {
+      list-style: none;
+      color: #c1b9b9;
+      font-size: 15px;
+      font-weight: 100; }
