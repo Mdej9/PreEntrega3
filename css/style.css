@@ -148,6 +148,8 @@ main .section_cards {
     font-weight: 700;
     color: #171669;
     font-size: 1em; }
+  main .section_cards div p {
+    min-height: 150px; }
 
 main .section_banner-bottom2 {
   display: flex;
