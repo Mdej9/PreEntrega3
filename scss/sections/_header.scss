@@ -1,0 +1,30 @@
+header{
+    nav{
+        .container-fluid{
+            .navbar-collapse{
+                justify-content: flex-end;
+            }
+            .navbar-toggler{
+                background-color: white!important;
+            }
+            .dropdown-menu{
+                background-color: white!important;
+                .dropdown-item{
+                    color: #171669!important;
+                }
+            }
+            a{
+                color: white!important;
+            }
+        }
+    }
+    .bg-body-tertiary{
+        background-color: #171669!important;
+    }
+}
+
+
+
+
+
+
