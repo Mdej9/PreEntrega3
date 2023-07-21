@@ -15,7 +15,7 @@ header{
             .dropdown-menu{
                 background-color: white!important;
                 .dropdown-item{
-                    color: #171669!important;
+                    color: $color-principal!important;
                 }
             }
             a{
@@ -24,7 +24,7 @@ header{
         }
     }
     .bg-body-tertiary{
-        background-color: #171669!important;
+        background-color: $color-principal!important;
     }
 }
 

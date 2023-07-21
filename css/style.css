@@ -36,8 +36,7 @@ main div .carousel-inner div img {
   max-height: 550px; }
 
 main div .carousel-inner p {
-  font-size: 16px;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
+  font-size: 16px; }
 
 main .section_banner-top {
   display: flex;
@@ -127,13 +126,13 @@ main hr {
 
 main .encabezado-cards strong {
   font-size: 13px;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 main .encabezado-cards h3 {
   color: #171669;
   font-size: 24px;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 main .section_cards {
   display: grid;
@@ -143,8 +142,13 @@ main .section_cards {
   padding: 25px; }
   main .section_cards .btn-primary {
     background-color: #171669 !important; }
+    main .section_cards .btn-primary:hover {
+      background-color: white !important;
+      color: #171669 !important;
+      font-weight: bold;
+      font-size: 15px; }
   main .section_cards div h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: #171669;
     font-size: 1em; }
@@ -287,7 +291,7 @@ footer .bottom-footer {
     justify-content: center; }
     footer .bottom-footer .b-footer h3 {
       color: white;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 2em; }
     footer .bottom-footer .b-footer .ul-footer {
       display: flex;
@@ -317,7 +321,7 @@ main .container {
     text-align: center;
     margin-bottom: 2rem; }
     main .container .header h1 {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       color: #171669;
       font-size: 4em; }
   main .container .content {

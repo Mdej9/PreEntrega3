@@ -1,6 +1,6 @@
 footer{
     .bottom-footer{
-        background-color: #171669;
+        background-color: $color-principal;
         .b-footer{
             display: flex;
             align-items: center;
@@ -8,7 +8,7 @@ footer{
             //margin: 25px;
             h3{
                 color: white;
-                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-family: $fuente-titulos;
                 font-size: 2em;
             }
             .ul-footer{

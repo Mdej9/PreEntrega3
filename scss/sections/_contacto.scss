@@ -10,8 +10,8 @@ main {
             text-align: center;
             margin-bottom: 2rem;
             h1{
-                font-family: 'Montserrat', sans-serif;
-                color: #171669;
+                font-family: $fuente-titulos;
+                color: $color-principal;
                 font-size: 4em;
             }
         }
@@ -24,14 +24,14 @@ main {
             text-align: center;
 
             label{
-                color: #171669;
+                color: $color-principal;
                 font-size: 1em;
             }
 
             button {
                 display: inline-block;
                 border-radius: 6px;
-                background-color: #171669;
+                background-color: $color-principal;
                 border: white .1px outset;
                 color: #FFFFFF;
                 text-align: center;

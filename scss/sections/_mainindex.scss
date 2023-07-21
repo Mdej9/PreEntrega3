@@ -9,7 +9,6 @@ main {
 
             p {
                 font-size: 16px;
-                font-family: Georgia, 'Times New Roman', Times, serif;
             }
         }
     }
@@ -18,14 +17,14 @@ main {
         display: flex;
         flex-direction: column;
         text-align: center;
-        background-color: #171669;
+        background-color: $color-principal;
         padding: 15px;
 
         .div_banner-top {
             .button_banner {
                 display: inline-block;
                 border-radius: 6px;
-                background-color: #171669;
+                background-color: $color-principal;
                 border: white .1px outset;
                 color: #FFFFFF;
                 text-align: center;
@@ -82,7 +81,7 @@ main {
         .button_banner {
             display: inline-block;
             border-radius: 6px;
-            background-color: #171669;
+            background-color: $color-principal;
             border: white .1px outset;
             color: #FFFFFF;
             text-align: center;
@@ -133,13 +132,13 @@ main {
     .encabezado-cards{
         strong{
             font-size: 13px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $fuente-titulos;
         }
         h3{
-            color: #171669;
+            color: $color-principal;
             font-size: 24px;
             font-weight: 700;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $fuente-titulos;
         }
     }
     .section_cards{
@@ -149,13 +148,19 @@ main {
         justify-items: center;
         padding: 25px;
         .btn-primary{
-            background-color: #171669!important;
+            background-color: $color-principal!important;
+            &:hover{
+                background-color: white!important;
+                color: $color-principal!important;
+                font-weight: bold;
+                font-size: 15px;
+            }
         }
         div{
             h5{
-                font-family: 'Montserrat', sans-serif;
+                font-family: $fuente-titulos;
                 font-weight: 700;
-                color: #171669;
+                color: $color-principal;
                 font-size: 1em;
             }
             p{
@@ -168,7 +173,7 @@ main {
         display: flex;
         flex-direction: column;
         text-align: center;
-        background-color: #171669;
+        background-color: $color-principal;
         padding: 15px;
         p{
             color: white;
@@ -176,7 +181,7 @@ main {
         .button_banner-bottom {
             display: inline-block;
             border-radius: 6px;
-            background-color: #171669;
+            background-color: $color-principal;
             border: white .1px outset;
             color: #FFFFFF;
             text-align: center;
@@ -227,7 +232,7 @@ main {
         .button_banner-bottom {
             display: inline-block;
             border-radius: 6px;
-            background-color: #171669;
+            background-color: $color-principal;
             border: white .1px outset;
             color: #FFFFFF;
             text-align: center;
@@ -282,7 +287,7 @@ main {
             button{
                 display: inline-block;
                 border-radius: 6px;
-                background-color: #171669;
+                background-color: $color-principal;
                 border: white .1px outset;
                 color: #FFFFFF;
                 text-align: center;
