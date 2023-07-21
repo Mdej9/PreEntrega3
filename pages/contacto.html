@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="../assets/img/favicon.jpg"/>
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="../assets/img/favicon.jpg" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -33,7 +33,8 @@
                                 Seguros
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="personasyprofesionales.html">Personas y Profesionales</a></li>
+                                <li><a class="dropdown-item" href="personasyprofesionales.html">Personas y
+                                        Profesionales</a></li>
                                 <li><a class="dropdown-item" href="paraempresas.html">Empresas</a></li>
                             </ul>
                         </li>
@@ -91,7 +92,29 @@
     </header>
 
     <main>
-
+        <div class="container">
+            <div class="header">
+                <h1>Contacto</h1>
+            </div>
+            <div class="content">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje:</label>
+                        <textarea class="form-control" id="message" rows="5"
+                            placeholder="Ingresa tu mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
