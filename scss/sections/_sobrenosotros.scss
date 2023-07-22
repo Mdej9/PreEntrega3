@@ -12,8 +12,6 @@ main {
                 font-family: $fuente-titulos;
                 font-size: 3.4em;
                 font-weight: 700;
-                translate: 65px;
-                transform: translateY(-50px);
             }
         }
     }
@@ -60,6 +58,70 @@ main {
 
             p {
                 min-height: 145px;
+            }
+        }
+    }
+
+    .section_baja {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 25px;
+
+        .div_txt-baja {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .h2 {
+                color: $color-principal;
+                font-family: $fuente-titulos;
+                font-size: 1.4em;
+                font-weight: 700;
+                margin: auto;
+            }
+
+            button {
+                display: inline-block;
+                border-radius: 6px;
+                background-color: $color-principal;
+                border: white .1px outset;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 17px;
+                padding: 6px;
+                width: 130px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: auto;
+
+                span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.5s;
+
+                    &:after {
+                        content: '»';
+                        position: absolute;
+                        opacity: 0;
+                        top: 0;
+                        right: -15px;
+                        transition: 0.5s;
+                    }
+                }
+
+                &:hover {
+                    span {
+                        padding-right: 15px;
+
+                        &:after {
+                            opacity: 1;
+                            right: 0;
+                        }
+                    }
+                }
+
             }
         }
     }

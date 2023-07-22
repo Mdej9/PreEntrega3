@@ -321,9 +321,7 @@ main .section_hero {
     color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 3.4em;
-    font-weight: 700;
-    translate: 65px;
-    transform: translateY(-50px); }
+    font-weight: 700; }
 
 main .section_about-banner {
   background-color: #171669;
@@ -356,6 +354,53 @@ main .section_cards-about {
     font-size: 1em; }
   main .section_cards-about div p {
     min-height: 145px; }
+
+main .section_baja {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px; }
+  main .section_baja .div_txt-baja {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    main .section_baja .div_txt-baja .h2 {
+      color: #171669;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.4em;
+      font-weight: 700;
+      margin: auto; }
+    main .section_baja .div_txt-baja button {
+      display: inline-block;
+      border-radius: 6px;
+      background-color: #171669;
+      border: white .1px outset;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 17px;
+      padding: 6px;
+      width: 130px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: auto; }
+      main .section_baja .div_txt-baja button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s; }
+        main .section_baja .div_txt-baja button span:after {
+          content: '»';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -15px;
+          transition: 0.5s; }
+      main .section_baja .div_txt-baja button:hover span {
+        padding-right: 15px; }
+        main .section_baja .div_txt-baja button:hover span:after {
+          opacity: 1;
+          right: 0; }
 
 main .container {
   display: flex;
