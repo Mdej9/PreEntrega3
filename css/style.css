@@ -329,7 +329,7 @@ main .section_about-banner {
   background-color: #171669;
   text-align: center;
   color: white;
-  padding: 20px; }
+  padding: 60px; }
   main .section_about-banner p {
     font-size: .857142em;
     margin-bottom: 1rem;
@@ -355,7 +355,7 @@ main .section_cards-about {
     color: #171669;
     font-size: 1em; }
   main .section_cards-about div p {
-    min-height: 200px; }
+    min-height: 145px; }
 
 main .container {
   display: flex;

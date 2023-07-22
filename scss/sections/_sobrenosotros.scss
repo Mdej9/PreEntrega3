@@ -5,6 +5,7 @@ main {
         justify-content: flex-end;
         padding: 25px;
         height: 236px;
+
         .div_txt-hero {
             .h1 {
                 color: white;
@@ -21,7 +22,7 @@ main {
         background-color: $color-principal;
         text-align: center;
         color: white;
-        padding: 20px;
+        padding: 60px;
 
         p {
             font-size: .857142em;
@@ -58,7 +59,7 @@ main {
             }
 
             p {
-                min-height: 200px;
+                min-height: 145px;
             }
         }
     }
