@@ -1,0 +1,57 @@
+main {
+    .section_hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+
+        .div_txt-hero {
+            .h1 {
+                color: $color-principal;
+                font-family: $fuente-titulos;
+            }
+        }
+    }
+
+    .section_about-banner {
+        background-color: $color-principal;
+        text-align: center;
+        color: white;
+        padding: 20px;
+
+        p {
+            font-size: .857142em;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+    }
+
+    .section_cards-about {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+        justify-items: center;
+        padding: 25px;
+        text-align: center;
+        .btn-primary{
+            background-color: $color-principal!important;
+            &:hover{
+                background-color: white!important;
+                color: $color-principal!important;
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+        div{
+            h5{
+                font-family: $fuente-titulos;
+                font-weight: 700;
+                color: $color-principal;
+                font-size: 1em;
+            }
+            p{
+                min-height: 200px;
+            }
+        }
+    }
+}
