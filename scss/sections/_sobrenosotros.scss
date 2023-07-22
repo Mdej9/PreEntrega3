@@ -2,13 +2,17 @@ main {
     .section_hero {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: flex-end;
         padding: 25px;
-
+        height: 236px;
         .div_txt-hero {
             .h1 {
-                color: $color-principal;
+                color: white;
                 font-family: $fuente-titulos;
+                font-size: 3.4em;
+                font-weight: 700;
+                translate: 65px;
+                transform: translateY(-50px);
             }
         }
     }
@@ -33,23 +37,27 @@ main {
         justify-items: center;
         padding: 25px;
         text-align: center;
-        .btn-primary{
-            background-color: $color-principal!important;
-            &:hover{
-                background-color: white!important;
-                color: $color-principal!important;
+
+        .btn-primary {
+            background-color: $color-principal !important;
+
+            &:hover {
+                background-color: white !important;
+                color: $color-principal !important;
                 font-weight: bold;
                 font-size: 15px;
             }
         }
-        div{
-            h5{
+
+        div {
+            h5 {
                 font-family: $fuente-titulos;
                 font-weight: 700;
                 color: $color-principal;
                 font-size: 1em;
             }
-            p{
+
+            p {
                 min-height: 200px;
             }
         }

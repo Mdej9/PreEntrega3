@@ -314,11 +314,16 @@ footer .bottom-footer {
 main .section_hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 25px; }
+  justify-content: flex-end;
+  padding: 25px;
+  height: 236px; }
   main .section_hero .div_txt-hero .h1 {
-    color: #171669;
-    font-family: "Montserrat", sans-serif; }
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.4em;
+    font-weight: 700;
+    translate: 65px;
+    transform: translateY(-50px); }
 
 main .section_about-banner {
   background-color: #171669;
