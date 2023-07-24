@@ -36,6 +36,13 @@ main {
         justify-items: center;
         padding: 25px;
         text-align: center;
+        .card{
+            .card-body{
+                p{
+                    font-size: .9rem;
+                }
+            }
+        }
 
         .btn-primary {
             background-color: $color-principal !important;

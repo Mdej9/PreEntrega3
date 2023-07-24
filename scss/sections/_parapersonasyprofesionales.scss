@@ -1,4 +1,8 @@
 main{
+    .section_hero{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .section_ppersonasypro-banner{
         background-color: gray;
         text-align: center;
@@ -12,6 +16,26 @@ main{
         }
     }
 
+    .h2_personas{
+        padding: 15px;
+        h2{
+            color: $color-principal;
+            font-family: $fuente-titulos;
+            font-weight: 700;
+            font-size: 35px;
+        }
+    }
+
+    .h2_pempresas{
+        padding: 15px;
+        h2{
+            color: $color-principal;
+            font-family: $fuente-titulos;
+            font-weight: 700;
+            font-size: 35px;
+        }
+    }
+
     .section_cards-ppersonasypro{
         display: grid;
         grid-template-columns: 1fr;
@@ -19,6 +43,13 @@ main{
         justify-items: center;
         padding: 25px;
         text-align: center;
+        .card{
+            .card-body{
+                p{
+                    font-size: .9rem;
+                }
+            }
+        }
         .btn-primary {
             background-color: $color-principal !important;
 

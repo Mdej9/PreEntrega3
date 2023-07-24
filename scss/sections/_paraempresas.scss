@@ -1,4 +1,8 @@
 main {
+    .section_hero{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .section_pempresas-banner {
         background-color: gray;
         text-align: center;
@@ -11,6 +15,15 @@ main {
             font-weight: 300;
         }
     }
+    .h2_pempresas{
+        padding: 15px;
+        h2{
+            color: $color-principal;
+            font-family: $fuente-titulos;
+            font-weight: 700;
+            font-size: 35px;
+        }
+    }
 
     .section_cards-pempresas {
         display: grid;
@@ -19,6 +32,13 @@ main {
         justify-items: center;
         padding: 25px;
         text-align: center;
+        .card{
+            .card-body{
+                p{
+                    font-size: .9rem;
+                }
+            }
+        }
         .btn-primary {
             background-color: $color-principal !important;
 
@@ -54,7 +74,6 @@ main {
         }
     }
 
-    /* Media Query para pantallas aún más grandes (escritorios) */
     @media (min-width: 1024px) {
         .section_cards-pempresas {
             grid-template-columns: repeat(4, 1fr);

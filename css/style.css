@@ -311,52 +311,71 @@ footer .bottom-footer {
       font-size: 15px;
       font-weight: 100; }
 
-main {
-  /* Media Query para pantallas aún más grandes (escritorios) */ }
-  main .section_pempresas-banner {
-    background-color: gray;
-    text-align: center;
-    color: black;
-    padding: 60px; }
-    main .section_pempresas-banner p {
-      font-size: .857142em;
-      margin-bottom: 1rem;
-      font-weight: 300; }
+main .section_hero {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+main .section_pempresas-banner {
+  background-color: gray;
+  text-align: center;
+  color: black;
+  padding: 60px; }
+  main .section_pempresas-banner p {
+    font-size: .857142em;
+    margin-bottom: 1rem;
+    font-weight: 300; }
+
+main .h2_pempresas {
+  padding: 15px; }
+  main .h2_pempresas h2 {
+    color: #171669;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 35px; }
+
+main .section_cards-pempresas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  padding: 25px;
+  text-align: center; }
+  main .section_cards-pempresas .card .card-body p {
+    font-size: .9rem; }
+  main .section_cards-pempresas .btn-primary {
+    background-color: #171669 !important; }
+    main .section_cards-pempresas .btn-primary:hover {
+      background-color: white !important;
+      color: #171669 !important;
+      font-weight: bold;
+      font-size: 15px; }
+  main .section_cards-pempresas div h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #171669;
+    font-size: 1em; }
+  main .section_cards-pempresas div p {
+    min-height: 145px; }
+
+@media (min-width: 768px) {
   main .section_cards-pempresas {
-    display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     justify-items: center;
     padding: 25px;
-    text-align: center; }
-    main .section_cards-pempresas .btn-primary {
-      background-color: #171669 !important; }
-      main .section_cards-pempresas .btn-primary:hover {
-        background-color: white !important;
-        color: #171669 !important;
-        font-weight: bold;
-        font-size: 15px; }
-    main .section_cards-pempresas div h5 {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 700;
-      color: #171669;
-      font-size: 1em; }
-    main .section_cards-pempresas div p {
-      min-height: 145px; }
-  @media (min-width: 768px) {
-    main .section_cards-pempresas {
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-      justify-items: center;
-      padding: 25px;
-      text-align: center; } }
-  @media (min-width: 1024px) {
-    main .section_cards-pempresas {
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 10px;
-      justify-items: center;
-      padding: 25px;
-      text-align: center; } }
+    text-align: center; } }
+
+@media (min-width: 1024px) {
+  main .section_cards-pempresas {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    padding: 25px;
+    text-align: center; } }
+
+main .section_hero {
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 main .section_ppersonasypro-banner {
   background-color: gray;
@@ -368,6 +387,22 @@ main .section_ppersonasypro-banner {
     margin-bottom: 1rem;
     font-weight: 300; }
 
+main .h2_personas {
+  padding: 15px; }
+  main .h2_personas h2 {
+    color: #171669;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 35px; }
+
+main .h2_pempresas {
+  padding: 15px; }
+  main .h2_pempresas h2 {
+    color: #171669;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 35px; }
+
 main .section_cards-ppersonasypro {
   display: grid;
   grid-template-columns: 1fr;
@@ -375,6 +410,8 @@ main .section_cards-ppersonasypro {
   justify-items: center;
   padding: 25px;
   text-align: center; }
+  main .section_cards-ppersonasypro .card .card-body p {
+    font-size: .9rem; }
   main .section_cards-ppersonasypro .btn-primary {
     background-color: #171669 !important; }
     main .section_cards-ppersonasypro .btn-primary:hover {
@@ -435,6 +472,8 @@ main .section_cards-about {
   justify-items: center;
   padding: 25px;
   text-align: center; }
+  main .section_cards-about .card .card-body p {
+    font-size: .9rem; }
   main .section_cards-about .btn-primary {
     background-color: #171669 !important; }
     main .section_cards-about .btn-primary:hover {
