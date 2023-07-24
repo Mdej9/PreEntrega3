@@ -1,0 +1,68 @@
+main {
+    .section_pempresas-banner {
+        background-color: gray;
+        text-align: center;
+        color: black;
+        padding: 60px;
+
+        p {
+            font-size: .857142em;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+    }
+
+    .section_cards-pempresas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        justify-items: center;
+        padding: 25px;
+        text-align: center;
+        .btn-primary {
+            background-color: $color-principal !important;
+
+            &:hover {
+                background-color: white !important;
+                color: $color-principal !important;
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+
+        div {
+            h5 {
+                font-family: $fuente-titulos;
+                font-weight: 700;
+                color: $color-principal;
+                font-size: 1em;
+            }
+
+            p {
+                min-height: 145px;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .section_cards-pempresas {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            justify-items: center;
+            padding: 25px;
+            text-align: center;
+        }
+    }
+
+    /* Media Query para pantallas aún más grandes (escritorios) */
+    @media (min-width: 1024px) {
+        .section_cards-pempresas {
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            justify-items: center;
+            padding: 25px;
+            text-align: center;
+        }
+
+    }
+}

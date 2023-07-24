@@ -1,0 +1,66 @@
+main{
+    .section_ppersonasypro-banner{
+        background-color: gray;
+        text-align: center;
+        color: black;
+        padding: 60px;
+
+        p {
+            font-size: .857142em;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+    }
+
+    .section_cards-ppersonasypro{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        justify-items: center;
+        padding: 25px;
+        text-align: center;
+        .btn-primary {
+            background-color: $color-principal !important;
+
+            &:hover {
+                background-color: white !important;
+                color: $color-principal !important;
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+
+        div {
+            h5 {
+                font-family: $fuente-titulos;
+                font-weight: 700;
+                color: $color-principal;
+                font-size: 1em;
+            }
+
+            p {
+                min-height: 145px;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        .section_cards-ppersonasypro {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            justify-items: center;
+            padding: 25px;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .section_cards-ppersonasypro {
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            justify-items: center;
+            padding: 25px;
+            text-align: center;
+        }
+
+    }
+}

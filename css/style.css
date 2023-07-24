@@ -311,6 +311,101 @@ footer .bottom-footer {
       font-size: 15px;
       font-weight: 100; }
 
+main {
+  /* Media Query para pantallas aún más grandes (escritorios) */ }
+  main .section_pempresas-banner {
+    background-color: gray;
+    text-align: center;
+    color: black;
+    padding: 60px; }
+    main .section_pempresas-banner p {
+      font-size: .857142em;
+      margin-bottom: 1rem;
+      font-weight: 300; }
+  main .section_cards-pempresas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    padding: 25px;
+    text-align: center; }
+    main .section_cards-pempresas .btn-primary {
+      background-color: #171669 !important; }
+      main .section_cards-pempresas .btn-primary:hover {
+        background-color: white !important;
+        color: #171669 !important;
+        font-weight: bold;
+        font-size: 15px; }
+    main .section_cards-pempresas div h5 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      color: #171669;
+      font-size: 1em; }
+    main .section_cards-pempresas div p {
+      min-height: 145px; }
+  @media (min-width: 768px) {
+    main .section_cards-pempresas {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      justify-items: center;
+      padding: 25px;
+      text-align: center; } }
+  @media (min-width: 1024px) {
+    main .section_cards-pempresas {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      justify-items: center;
+      padding: 25px;
+      text-align: center; } }
+
+main .section_ppersonasypro-banner {
+  background-color: gray;
+  text-align: center;
+  color: black;
+  padding: 60px; }
+  main .section_ppersonasypro-banner p {
+    font-size: .857142em;
+    margin-bottom: 1rem;
+    font-weight: 300; }
+
+main .section_cards-ppersonasypro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  padding: 25px;
+  text-align: center; }
+  main .section_cards-ppersonasypro .btn-primary {
+    background-color: #171669 !important; }
+    main .section_cards-ppersonasypro .btn-primary:hover {
+      background-color: white !important;
+      color: #171669 !important;
+      font-weight: bold;
+      font-size: 15px; }
+  main .section_cards-ppersonasypro div h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #171669;
+    font-size: 1em; }
+  main .section_cards-ppersonasypro div p {
+    min-height: 145px; }
+
+@media (min-width: 768px) {
+  main .section_cards-ppersonasypro {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    padding: 25px;
+    text-align: center; } }
+
+@media (min-width: 1024px) {
+  main .section_cards-ppersonasypro {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    padding: 25px;
+    text-align: center; } }
+
 main .section_hero {
   display: flex;
   flex-direction: column;
