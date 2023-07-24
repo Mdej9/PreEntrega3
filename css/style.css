@@ -320,10 +320,6 @@ main .section_pempresas-banner {
   text-align: center;
   color: black;
   padding: 60px; }
-  main .section_pempresas-banner p {
-    font-size: .857142em;
-    margin-bottom: 1rem;
-    font-weight: 300; }
 
 main .h2_pempresas {
   padding: 15px; }
@@ -382,10 +378,6 @@ main .section_ppersonasypro-banner {
   text-align: center;
   color: black;
   padding: 60px; }
-  main .section_ppersonasypro-banner p {
-    font-size: .857142em;
-    margin-bottom: 1rem;
-    font-weight: 300; }
 
 main .h2_personas {
   padding: 15px; }
