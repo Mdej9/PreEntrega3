@@ -68,60 +68,21 @@ main {
             }
         }
     }
-    .section_banner-bottom{
+
+    .section_banner-bottom {
         display: flex;
         flex-direction: column;
         text-align: center;
         background-color: #e0e0e0;
         padding: 15px;
         margin-bottom: 15px;
-        p{
-            margin-top:auto ;
+
+        p {
+            margin-top: auto;
         }
-        /*.button_banner {
-            display: inline-block;
-            border-radius: 6px;
-            background-color: $color-principal;
-            border: white .1px outset;
-            color: #FFFFFF;
-            text-align: center;
-            font-size: 17px;
-            padding: 6px;
-            width: 130px;
-            transition: all 0.5s;
-            cursor: pointer;
-            margin: auto;
-
-            span {
-                cursor: pointer;
-                display: inline-block;
-                position: relative;
-                transition: 0.5s;
-
-                &:after {
-                    content: '»';
-                    position: absolute;
-                    opacity: 0;
-                    top: 0;
-                    right: -15px;
-                    transition: 0.5s;
-                }
-            }
-
-            &:hover {
-                span {
-                    padding-right: 15px;
-
-                    &:after {
-                        opacity: 1;
-                        right: 0;
-                    }
-                }
-            }
-        }*/
     }
 
-    hr{
+    hr {
         height: 1px;
         opacity: .5;
         max-width: 896px;
@@ -129,55 +90,63 @@ main {
         padding: 15px;
     }
 
-    .encabezado-cards{
-        strong{
+    .encabezado-cards {
+        strong {
             font-size: 13px;
             font-family: $fuente-titulos;
         }
-        h3{
+
+        h3 {
             color: $color-principal;
             font-size: 24px;
             font-weight: 700;
             font-family: $fuente-titulos;
         }
     }
-    .section_cards{
+
+    .section_cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 10px;
         justify-items: center;
         padding: 25px;
-        .btn-primary{
-            background-color: $color-principal!important;
-            &:hover{
-                background-color: white!important;
-                color: $color-principal!important;
+
+        .btn-primary {
+            background-color: $color-principal !important;
+
+            &:hover {
+                background-color: white !important;
+                color: $color-principal !important;
                 font-weight: bold;
                 font-size: 15px;
             }
         }
-        div{
-            h5{
+
+        div {
+            h5 {
                 font-family: $fuente-titulos;
                 font-weight: 700;
                 color: $color-principal;
                 font-size: 1em;
             }
-            p{
+
+            p {
                 min-height: 150px;
             }
         }
     }
 
-    .section_banner-bottom2{
+    .section_banner-bottom2 {
         display: flex;
         flex-direction: column;
         text-align: center;
         background-color: $color-principal;
         padding: 15px;
-        p{
+
+        p {
             color: white;
         }
+
         .button_banner-bottom {
             display: inline-block;
             border-radius: 6px;
@@ -220,15 +189,18 @@ main {
             }
         }
     }
-    .section_banner-bottom3{
+
+    .section_banner-bottom3 {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding: 15px;
         margin-bottom: 15px;
-        p{
-            margin-top:auto ;
+
+        p {
+            margin-top: auto;
         }
+
         .button_banner-bottom {
             display: inline-block;
             border-radius: 6px;
@@ -271,20 +243,24 @@ main {
             }
         }
     }
-    .section_app{
+
+    .section_app {
         margin: 25px;
-        .div_app{
+
+        .div_app {
             display: flex;
             flex-direction: column;
             align-items: center;
-            .div_img-app{
-                img{
+
+            .div_img-app {
+                img {
                     width: 100%;
                 }
             }
         }
-        .div_buttons-app{
-            button{
+
+        .div_buttons-app {
+            button {
                 display: inline-block;
                 border-radius: 6px;
                 background-color: $color-principal;
@@ -297,13 +273,13 @@ main {
                 transition: all 0.5s;
                 cursor: pointer;
                 margin: auto;
-    
+
                 span {
                     cursor: pointer;
                     display: inline-block;
                     position: relative;
                     transition: 0.5s;
-    
+
                     &:after {
                         content: '»';
                         position: absolute;
@@ -313,11 +289,11 @@ main {
                         transition: 0.5s;
                     }
                 }
-    
+
                 &:hover {
                     span {
                         padding-right: 15px;
-    
+
                         &:after {
                             opacity: 1;
                             right: 0;
@@ -327,16 +303,19 @@ main {
             }
         }
     }
+
     @media(min-width: 767px) {
         .section_banner-top {
             display: flex;
             flex-direction: row;
         }
-        .section_banner-bottom{
+
+        .section_banner-bottom {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            .button_banner{
+
+            .button_banner {
                 margin: 5px;
             }
         }
