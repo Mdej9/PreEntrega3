@@ -1,0 +1,46 @@
+@mixin first-button-style {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: $color-principal;
+    border: white 0.1px outset;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 6px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+
+    span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+
+        &:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -15px;
+            transition: 0.5s;
+        }
+    }
+
+    &:hover {
+        span {
+            padding-right: 15px;
+
+            &:after {
+                opacity: 1;
+                right: 0;
+            }
+        }
+    }
+}
+
+
+.button_banner {
+    @include first-button-style;
+}
