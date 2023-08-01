@@ -5,9 +5,12 @@ main {
     }
     .section_pempresas-banner {
         background-color: gray;
-        text-align: center;
         color: black;
         padding: 60px;
+        p{
+            max-width: 850px;
+            margin: auto;
+        }
     }
     .h2_pempresas{
         padding: 15px;
@@ -61,20 +64,19 @@ main {
     @media (min-width: 768px) {
         .section_cards-pempresas {
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
-            justify-items: center;
-            padding: 25px;
-            text-align: center;
         }
     }
 
     @media (min-width: 1024px) {
         .section_cards-pempresas {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
+
+    @media (min-width: 1135px) {
+        .section_cards-pempresas {
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 10px;
-            justify-items: center;
-            padding: 25px;
-            text-align: center;
         }
 
     }

@@ -1,18 +1,24 @@
-main{
-    .section_hero{
+main {
+    .section_hero {
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .section_ppersonasypro-banner{
+
+    .section_ppersonasypro-banner {
         background-color: gray;
-        text-align: center;
         color: black;
         padding: 60px;
+
+        p {
+            max-width: 850px;
+            margin: auto;
+        }
     }
 
-    .h2_personas{
+    .h2_personas {
         padding: 15px;
-        h2{
+
+        h2 {
             color: $color-principal;
             font-family: $fuente-titulos;
             font-weight: 700;
@@ -20,9 +26,10 @@ main{
         }
     }
 
-    .h2_pempresas{
+    .h2_pempresas {
         padding: 15px;
-        h2{
+
+        h2 {
             color: $color-principal;
             font-family: $fuente-titulos;
             font-weight: 700;
@@ -30,20 +37,22 @@ main{
         }
     }
 
-    .section_cards-ppersonasypro{
+    .section_cards-ppersonasypro {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
         justify-items: center;
         padding: 25px;
         text-align: center;
-        .card{
-            .card-body{
-                p{
+
+        .card {
+            .card-body {
+                p {
                     font-size: .9rem;
                 }
             }
         }
+
         .btn-primary {
             background-color: $color-principal !important;
 
@@ -68,23 +77,25 @@ main{
             }
         }
     }
+
     @media (min-width: 768px) {
         .section_cards-ppersonasypro {
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
-            justify-items: center;
-            padding: 25px;
-            text-align: center;
+
         }
     }
 
     @media (min-width: 1024px) {
         .section_cards-ppersonasypro {
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+    }
+
+    @media (min-width: 1135px) {
+        .section_cards-ppersonasypro {
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 10px;
-            justify-items: center;
-            padding: 25px;
-            text-align: center;
         }
 
     }

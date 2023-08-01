@@ -1,4 +1,13 @@
 main {
+    header{
+        .navbar{
+            .container-fluid{
+                .navbar-toggler{
+                    background-color: $color-principal !important;
+                }
+            }
+        }
+    }
     div {
         .carousel-inner {
             div {
@@ -16,11 +25,11 @@ main {
     .section_banner-top {
         display: flex;
         flex-direction: column;
-        text-align: center;
         background-color: $color-principal;
         padding: 15px;
 
         .div_banner-top {
+            text-align: center;
             .button_banner {
                 display: inline-block;
                 border-radius: 6px;
@@ -72,7 +81,7 @@ main {
     .section_banner-bottom {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
         background-color: #e0e0e0;
         padding: 15px;
         margin-bottom: 15px;
@@ -105,11 +114,17 @@ main {
     }
 
     .section_cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 10px;
-        justify-items: center;
-        padding: 25px;
+        justify-content: center;
+        gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 15px;
+        .card{
+            .card-body{
+                text-align: center;
+            }
+        }
 
         .btn-primary {
             background-color: $color-principal !important;

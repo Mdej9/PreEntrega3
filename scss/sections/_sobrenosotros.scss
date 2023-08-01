@@ -18,11 +18,12 @@ main {
 
     .section_about-banner {
         background-color: $color-principal;
-        text-align: center;
         color: white;
         padding: 60px;
 
         p {
+            margin: auto;
+            max-width: 850px;
             font-size: .857142em;
             margin-bottom: 1rem;
             font-weight: 300;
@@ -30,12 +31,14 @@ main {
     }
 
     .section_cards-about {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 10px;
-        justify-items: center;
-        padding: 25px;
+        justify-content: center;
+        gap: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
         .card{
             .card-body{
                 p{
